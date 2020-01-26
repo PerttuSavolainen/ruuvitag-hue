@@ -1,6 +1,6 @@
 {
   "name": "ruuvitag-hue",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Use RuuviTags data to control Philips Hue lights",
   "main": "index.ts",
   "scripts": {
