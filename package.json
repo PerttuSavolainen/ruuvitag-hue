@@ -4,6 +4,7 @@
   "description": "Use RuuviTags data to control Philips Hue lights",
   "main": "index.ts",
   "scripts": {
+    "postinstall": "sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)",
     "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "standard-version"
@@ -17,6 +18,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "debounce": "^1.2.0",
     "dotenv": "^8.2.0",
     "node-hue-api": "^4.0.2",
     "node-ruuvitag": "Glenf/node-ruuvitag#40133317be022022044439460f2962344c3dec10"
